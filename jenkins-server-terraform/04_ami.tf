@@ -8,5 +8,5 @@ data "aws_ami" "ami" {
   }
 
   # Owner of the Ubuntu AMI (Canonical)
-  owners = ["099720109477"]
+  owners = ["084658101702"]
 }
