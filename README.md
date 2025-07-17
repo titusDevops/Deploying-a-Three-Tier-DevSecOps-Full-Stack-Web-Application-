@@ -104,8 +104,21 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 # 5) Installing Plugins on Jenkins
 Open the EC2-IP:8080 in the browser. 
+<img width="1903" height="1015" alt="Screenshot 2025-07-16 110851" src="https://github.com/user-attachments/assets/e294b07e-f642-44a7-8ea5-da9eab6d65eb" />
+<img width="1907" height="936" alt="Screenshot 2025-07-16 111032" src="https://github.com/user-attachments/assets/91a0966e-68fe-429c-882b-195951f1455c" />
 
 You can get the password of Jenkins
+<img width="1458" height="156" alt="Screenshot 2025-07-16 111048" src="https://github.com/user-attachments/assets/713d50cd-a7c5-4fbd-a4c6-af94d6709b99" />
+
+We have to install all these mentioned plugins.
+AWS Credentials
+AWS Steps
+Docker plugins
+Eclipse Temurin installer
+NodeJS
+OWASP Dependency-Check,
+SonarQube Scanner.
+
 
 # 6) SonarQube Setup
 Open Sonarrqube in the browser. 
