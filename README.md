@@ -52,13 +52,16 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 * #### To install AWS CLI, I visited [AWS installation page](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
+ <img width="1285" height="529" alt="Screenshot 2025-07-15 092748" src="https://github.com/user-attachments/assets/13f13189-bc39-4974-a4a2-9fcaf414d5b4" />
+
 * #### After installation, I verified installation with these two commands below:
   
-<img width="1285" height="529" alt="Screenshot 2025-07-15 092748" src="https://github.com/user-attachments/assets/a34e5220-aada-4a12-98fe-bbd61f79dc45" />
+ <img width="1919" height="553" alt="Screenshot 2025-07-15 092803" src="https://github.com/user-attachments/assets/4695eea4-98df-4ba8-8af9-b6fea69ba944" />
 
 * #### Then I configured AWS CLI using the given below commands. I used Access and Secret Keys from the CSV file that I downloaded in the IAM User Setup.
+ 
+ <img width="1890" height="413" alt="Screenshot 2025-07-15 094400-redacted_dot_app (1)" src="https://github.com/user-attachments/assets/0272a747-83c1-45c2-986f-576265a19d38" />
 
-<img width="1890" height="413" alt="Screenshot 2025-07-15 094400-redacted_dot_app (1)" src="https://github.com/user-attachments/assets/620bb56a-46fe-4935-978d-6d7a64e47f14" />
 
 # 3) S3 Bucket and DynamoDB Table:
 
