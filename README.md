@@ -6,9 +6,6 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 <img width="788" height="473" alt="Screenshot 2025-07-17 223454" src="https://github.com/user-attachments/assets/12103aea-e84a-4bda-b036-212fbd00e639" />
 
 
-![Screenshot 2025-07-02 211523](https://github.com/user-attachments/assets/f1438274-7c29-4297-ace1-2ba07291e350)
-
-
 # 1) IAM User Setup:
 ### Creating an IAM user with the necessary permissions for EKS, S3, DynamoDB, ECR, and EC2.
 
@@ -82,22 +79,23 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 # 4) Jenkins EC2 Server Setup with Terraform:
 
 * #### Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server
-* Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server.
+* #### Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server.
 
-Now run this command to create a Jenkins server.
+* #### Now run this command to create a Jenkins server.
 
-terraform init
-terraform validate
-terraform apply
+* #### terraform init
+* #### terraform validate
+* #### terraform apply
 
-Now ssh to your server :
+* #### Now ssh to your server :
 
-Make sure you run these commands from the folder where your pem file exist.
-chmod 400 "devsecops-project.pem"
+* #### Make sure you run these commands from the folder where your pem file exist.
 
-ssh -i "devsecops-project.pem" ubuntu@35.92.246.29
+* #### chmod 400 "devsecops-project.pem"
 
-configure aws on the Jenkins server(EC2 Instance). As you did for your local machine.
+* #### ssh -i "devsecops-project.pem" ubuntu@35.92.246.29
+
+* #### configure aws on the Jenkins server(EC2 Instance). As you did for your local machine.
 
 <img width="1671" height="131" alt="Screenshot 2025-07-15 114913" src="https://github.com/user-attachments/assets/1297b37f-94db-4c0a-8c98-cf1e37493788" />
 
@@ -117,19 +115,28 @@ configure aws on the Jenkins server(EC2 Instance). As you did for your local mac
 <img width="1420" height="733" alt="Screenshot 2025-07-16 082750" src="https://github.com/user-attachments/assets/81dee992-6dbe-4cd9-82cd-aab78c2d0e20" />
 
 <img width="1885" height="949" alt="Screenshot 2025-07-16 102240" src="https://github.com/user-attachments/assets/cf657ee8-d3f1-448d-83dc-961ea15add4e" />
+
 <img width="1891" height="969" alt="Screenshot 2025-07-16 102308" src="https://github.com/user-attachments/assets/c61a8cb6-92af-4d84-88df-4472e1f52dcd" />
+
 <img width="1893" height="985" alt="Screenshot 2025-07-16 102326" src="https://github.com/user-attachments/assets/bb84018f-740a-40ee-a3f3-095ef3144236" />
 
 # 5) Installing Plugins on Jenkins
-Open the EC2-IP:8080 in the browser. 
+* #### Open the EC2-IP:8080 in the browser.
+* 
 <img width="1903" height="1015" alt="Screenshot 2025-07-16 110851" src="https://github.com/user-attachments/assets/e294b07e-f642-44a7-8ea5-da9eab6d65eb" />
+
 <img width="1907" height="936" alt="Screenshot 2025-07-16 111032" src="https://github.com/user-attachments/assets/91a0966e-68fe-429c-882b-195951f1455c" />
 
 You can get the password of Jenkins
+
 <img width="1458" height="156" alt="Screenshot 2025-07-16 111048" src="https://github.com/user-attachments/assets/713d50cd-a7c5-4fbd-a4c6-af94d6709b99" />
+
 <img width="1903" height="903" alt="Screenshot 2025-07-16 111954" src="https://github.com/user-attachments/assets/20582975-7fc2-447f-8c9f-7d374181157e" />
+
 <img width="1444" height="900" alt="Screenshot 2025-07-16 112056" src="https://github.com/user-attachments/assets/0ea11b5f-42b5-4e7e-9aea-71926650a795" />
+
 <img width="1889" height="905" alt="Screenshot 2025-07-16 112117" src="https://github.com/user-attachments/assets/cc7b3911-f4ec-4f6d-be67-43d3db9aa255" />
+
 <img width="1896" height="890" alt="Screenshot 2025-07-16 114502" src="https://github.com/user-attachments/assets/6734cc6a-29f8-4678-8306-81bbdf65e2a1" />
 
 We have to install all these mentioned plugins.
@@ -145,13 +152,14 @@ We have to install all these mentioned plugins.
 <img width="1897" height="886" alt="Screenshot 2025-07-16 121947" src="https://github.com/user-attachments/assets/9de81502-f14d-43f8-a121-96bc15670c76" />
 
 <img width="1897" height="886" alt="Screenshot 2025-07-16 121947" src="https://github.com/user-attachments/assets/048c5514-392d-4bd2-97a8-e06645eccbb7" />
+
 <img width="1902" height="881" alt="Screenshot 2025-07-16 122514" src="https://github.com/user-attachments/assets/42b0d0fa-4b78-40b9-9605-b249eaeb38b1" />
 
 # 6) SonarQube Setup
-Open Sonarrqube in the browser. 
+* #### Open Sonarrqube in the browser. 
 
-http://<jenkins-server-public-ip>:9090
-username and password for sonarqube is admin.
+* #### http://<jenkins-server-public-ip>:9090
+* #### username and password for sonarqube is admin.
 
 <img width="1904" height="1005" alt="Screenshot 2025-07-16 123200" src="https://github.com/user-attachments/assets/5136bcf4-c7e2-4bef-a843-f05f3fa4e7f1" />
 
@@ -168,11 +176,12 @@ Setup of frontend project for code analysis
 
 Setup of backend project for code analysis
 <img width="1916" height="858" alt="Screenshot 2025-07-16 123938" src="https://github.com/user-attachments/assets/f327179f-90a8-41b4-a81f-8df8a08885e0" />
+
 <img width="1893" height="886" alt="Screenshot 2025-07-16 125004" src="https://github.com/user-attachments/assets/0610c814-014e-4a42-bca3-f6ef5c74bcaa" />
 
 
-Replace the keys in jenkins-pipeline folder, you got from the above two steps. (watch video sonarqube setup)
-create a sonar-token, and save it somewhere for later use in Jenkins.
+* #### Replace the keys in jenkins-pipeline folder, you got from the above two steps. (watch video sonarqube setup)
+* #### create a sonar-token, and save it somewhere for later use in Jenkins.
 
 <img width="1758" height="735" alt="Screenshot 2025-07-16 125608" src="https://github.com/user-attachments/assets/1d92de96-288a-4d42-b904-46814146627f" />
 
@@ -185,6 +194,7 @@ create a webhook on the sonarqube dashboard. (http://<jenkins-ec2-server-public-
 # 7) Amazon ECR Repositories
 Create two repositories, one for the backend and front end.
 <img width="1902" height="867" alt="Screenshot 2025-07-16 132220" src="https://github.com/user-attachments/assets/be3d23d8-45e3-4d04-b0ae-5351ff53bd3e" />
+
 <img width="1902" height="874" alt="Screenshot 2025-07-16 132254" src="https://github.com/user-attachments/assets/f7cce2df-720e-446f-be55-00a2df951a65" />
 
 
@@ -196,9 +206,9 @@ Login to ECR on the Jenkins server, using the ECR push command.
 <img width="1887" height="1015" alt="Screenshot 2025-07-16 133002" src="https://github.com/user-attachments/assets/42b7e57c-7e18-4b29-b00f-36d1a50e1e44" />
 
 # 7a) Add Cred. in Jenkins
-Got to Manage Jenkins -> Credentials.
+* #### Got to Manage Jenkins -> Credentials.
 
-We have to add here a total of 7 Credentials.
+* #### We have to add here a total of 7 Credentials.
 
 <img width="1866" height="903" alt="Screenshot 2025-07-16 134702" src="https://github.com/user-attachments/assets/17347937-ceec-49a1-97ce-7799051b4177" />
 
@@ -227,118 +237,120 @@ Now We have to configure the installed plugins. (important)
 <img width="1585" height="669" alt="Screenshot 2025-07-16 145614" src="https://github.com/user-attachments/assets/6c10868c-35da-4ff1-a7ed-23e385114c0d" />
 
 
-In Tools, We have to configure JDK, sonar-scanner, nodejs, DP-Check, and docker.
+* #### In Tools, We have to configure JDK, sonar-scanner, nodejs, DP-Check, and docker.
 
-Go to Dashboard -> Manage Jenkins -> System
+* #### Go to Dashboard -> Manage Jenkins -> System
 
-Search for SonarQube installations
+* #### Search for SonarQube installations
 
 Provide the name as it is, then in the Server URL copy the sonarqube public IP (same as Jenkins) with port 9000 select the sonar token that we have added recently, and click on Apply & Save.
 # 8) EKS Cluster Deployment
 
 
-We have to create EKS Cluster using the below commands.
+* #### We have to create EKS Cluster using the below commands.
 <img width="1915" height="971" alt="Screenshot 2025-07-16 145913" src="https://github.com/user-attachments/assets/87ba2dcc-954e-4aea-baff-2a6bd4157bfd" />
+
 <img width="1904" height="938" alt="Screenshot 2025-07-16 152401" src="https://github.com/user-attachments/assets/50c6fa85-d8c3-4c5d-8623-ba9fad1e3178" />
 
 
-Once the cluster is ready, you can validate if the nodes are ready or not.
+* #### Once the cluster is ready, you can validate if the nodes are ready or not.
 
 <img width="1894" height="936" alt="Screenshot 2025-07-16 152550" src="https://github.com/user-attachments/assets/0edc6f42-08f7-40c4-85f0-9f897a2d7c90" />
 
-Now, we will configure the Load Balancer on our EKS because our application will have an ingress controller.
+* #### Now, we will configure the Load Balancer on our EKS because our application will have an ingress controller.
 
 <img width="1919" height="221" alt="Screenshot 2025-07-16 154439" src="https://github.com/user-attachments/assets/567a8847-bf3f-4dda-ad60-b4bee252d72d" />
 
-Download the policy for the LoadBalancer prerequisite.
+* #### Download the policy for the LoadBalancer prerequisite.
 
 <img width="1911" height="495" alt="Screenshot 2025-07-16 154624" src="https://github.com/user-attachments/assets/c4eae3d7-e7f9-44bf-95ff-36df6e9878b3" />
 
 
-Create the IAM policy using the below command
+* #### Create the IAM policy using the below command
 
-Create OIDC Provider
+* #### Create OIDC Provider
 
 <img width="1908" height="211" alt="Screenshot 2025-07-16 154929" src="https://github.com/user-attachments/assets/33d9bbc4-2f2f-469c-89ef-b1acf66ad73a" />
 
-Create a Service Account by using below command and replace your account ID with your one
-Run the below command to deploy the AWS Load Balancer Controller
+* #### Create a Service Account by using below command and replace your account ID with your one
+* #### Run the below command to deploy the AWS Load Balancer Controller
 <img width="1893" height="616" alt="Screenshot 2025-07-16 155803" src="https://github.com/user-attachments/assets/f0a92454-58b9-4048-9dc1-2ef76fb09749" />
 
-After 2-3 minutes, run the command below to check whether your pods are running or not.
+* #### After 2-3 minutes, run the command below to check whether your pods are running or not.
+* 
 # 9) Prometheus and Grafana Installation and Configuration
-What is Grafana?
 
-Grafana is an open-source platform for visualization and analytics. It allows you to query, visualize, alert on, and explore metrics from various data sources.
 
-Steps to Install and Configure Prometheus and Grafana on Kubernetes
-
-Step 1: Add Helm Repositories
+* #### Step 1: Add Helm Repositories
 <img width="1465" height="86" alt="Screenshot 2025-07-16 160141" src="https://github.com/user-attachments/assets/af16013a-fb13-4d80-bcd0-2ab773093284" />
 
-Add Helm Stable Chart Repository
+* #### Add Helm Stable Chart Repository
 2. Add Prometheus Community Helm Repository
 <img width="1905" height="821" alt="Screenshot 2025-07-16 160610" src="https://github.com/user-attachments/assets/32ddec39-d912-4985-963e-9b0048995b8a" />
+
 <img width="1907" height="598" alt="Screenshot 2025-07-16 161438" src="https://github.com/user-attachments/assets/788e5f0c-40c3-437f-b04d-50716c74bf56" />
 
-Step 2: Create a Namespace for monitoring
+* #### Step 2: Create a Namespace for monitoring
 <img width="1884" height="246" alt="Screenshot 2025-07-16 161632" src="https://github.com/user-attachments/assets/17e84af7-e626-4088-99f2-42d1d6191fe5" />
 
-Step 3: Install Prometheus with Grafana using Helm
+* #### Step 3: Install Prometheus with Grafana using Helm
 
 <img width="1895" height="480" alt="Screenshot 2025-07-16 160736" src="https://github.com/user-attachments/assets/fabefef5-ee78-41ea-a873-2b2d0a97a103" />
 
 <img width="1879" height="141" alt="Screenshot 2025-07-16 161524" src="https://github.com/user-attachments/assets/8f2ea759-eeff-43ec-860a-3a08da76c690" />
 
-Install the kube-prometheus-stack chart, which includes both Prometheus and Grafana:
-This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
+* #### Install the kube-prometheus-stack chart, which includes both Prometheus and Grafana:
+* #### This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
 
 <img width="1919" height="641" alt="Screenshot 2025-07-16 161913" src="https://github.com/user-attachments/assets/e6256960-0b5f-43ca-85f5-139f9d45b61f" />
 
-Step 4: Verify Prometheus Installation
+* #### Step 4: Verify Prometheus Installation
 
-Check the Prometheus pods:
-This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
+* #### Check the Prometheus pods:
+* #### This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
 <img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/6407cc1e-8bda-4f3b-80f8-c5942f0effca" />
 
-Step 4: Verify Prometheus Installation
+* #### Step 4: Verify Prometheus Installation
 
-Check the Prometheus pods:
+* #### Check the Prometheus pods:
 <img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/53106e1f-a1d2-4e0e-abaa-25a83f13b769" />
 
-Check the Prometheus services:
+* #### Check the Prometheus services:
 <img width="1908" height="550" alt="Screenshot 2025-07-16 162124" src="https://github.com/user-attachments/assets/a51cd347-c498-4bf9-afdc-d66285e87195" />
 
-Since Grafana is deployed along with Prometheus, there is no need for separate Grafana installation.
+* #### Since Grafana is deployed along with Prometheus, there is no need for separate Grafana installation.
 
-Step 5: Expose Prometheus and Grafana to External Access
+* #### Step 5: Expose Prometheus and Grafana to External Access
 
-There are two ways to expose these services:
+* #### There are two ways to expose these services:
 
-NodePort
-LoadBalancer
+* #### NodePort
+* #### LoadBalancer
 
-Exposing Prometheus via LoadBalancer:
-Save the file. The service should now have a load balancer with an external IP to access Prometheus.
+* #### Exposing Prometheus via LoadBalancer:
+* #### Save the file. The service should now have a load balancer with an external IP to access Prometheus.
 
-Exposing Grafana via LoadBalancer:
+* #### Exposing Grafana via LoadBalancer:
 
-Similarly, edit the Grafana service configuration to change ClusterIP to LoadBalancer:
-Save the changes and use the load balancer IP in your browser to access Grafana.
+* #### Similarly, edit the Grafana service configuration to change ClusterIP to LoadBalancer:
+* #### Save the changes and use the load balancer IP in your browser to access Grafana.
 
 <img width="1876" height="109" alt="Screenshot 2025-07-16 162556" src="https://github.com/user-attachments/assets/a7069edf-110e-4922-af6f-609df4852dd4" />
+
 <img width="1890" height="568" alt="Screenshot 2025-07-16 162829" src="https://github.com/user-attachments/assets/997369e9-1b89-480d-a5b1-8f44324c80e3" />
 
 <img width="1239" height="80" alt="Screenshot 2025-07-16 163225" src="https://github.com/user-attachments/assets/8bd573ff-2159-4116-95cb-9d15ebc647ce" />
 
 <img width="1916" height="689" alt="Screenshot 2025-07-16 163447" src="https://github.com/user-attachments/assets/54b7ebf0-2b8f-4838-8f54-b7f90ea20f06" />
 
-Step 6: Accessing Grafana
+* #### Step 6: Accessing Grafana
+
 <img width="1908" height="680" alt="Screenshot 2025-07-16 164431" src="https://github.com/user-attachments/assets/262009b0-e6a7-4a9e-8e9d-b2360e0a0d67" />
 
 <img width="1855" height="653" alt="Screenshot 2025-07-16 164517" src="https://github.com/user-attachments/assets/2faaa3ed-c317-42cf-9692-3905213de549" />
 
-The username will be admin and the password will be prom-operator for your Grafana LogIn.
+* #### The username will be admin and the password will be prom-operator for your Grafana LogIn.
+
 <img width="1911" height="958" alt="Screenshot 2025-07-16 164536" src="https://github.com/user-attachments/assets/1956a57e-7377-4f96-a15c-92e8f3904d9d" />
 
 <img width="1907" height="966" alt="Screenshot 2025-07-16 164551" src="https://github.com/user-attachments/assets/fa219ffd-f22e-4371-8c16-353d7c59d0c9" />
@@ -371,28 +383,31 @@ The username will be admin and the password will be prom-operator for your Grafa
 <img width="1611" height="640" alt="Screenshot 2025-07-17 100359" src="https://github.com/user-attachments/assets/4312a941-c171-4702-a429-6c611b6bbfaa" />
 
 <img width="1689" height="671" alt="Screenshot 2025-07-17 100526" src="https://github.com/user-attachments/assets/03921efd-c1eb-4f9c-9ae9-ed1a59be67b1" />
+
 <img width="1910" height="927" alt="Screenshot 2025-07-17 100741" src="https://github.com/user-attachments/assets/5588a6be-5a75-4a2e-84bc-8454ed2823b5" />
 
 <img width="1803" height="732" alt="Screenshot 2025-07-17 100753" src="https://github.com/user-attachments/assets/6d18eb1a-bf50-4662-a34e-028ac5b94006" />
 
 
 # 11) ArgoCD Installation & Application Deployment
-Now, we will install argoCD.
 
-To do that, create a separate namespace for it and apply the argocd configuration for installation
+* #### Now, we will install argoCD.
+
+* #### To do that, create a separate namespace for it and apply the argocd configuration for installation
 
 <img width="1904" height="221" alt="Screenshot 2025-07-17 110709" src="https://github.com/user-attachments/assets/c403773f-5838-4c34-b103-cbfc8bd6a776" />
 
 <img width="1892" height="975" alt="Screenshot 2025-07-17 111535" src="https://github.com/user-attachments/assets/34badcac-c5a5-479b-9fab-23e98eaa351f" />
 
-All pods must be running, to validate run the below command
-Now, expose the argoCD server as LoadBalancer using the below command
+* #### All pods must be running, to validate run the below command
+* #### Now, expose the argoCD server as LoadBalancer using the below command
 
-You can validate whether the Load Balancer is created o by going to the AWS Console load balancers.
+* #### You can validate whether the Load Balancer is created o by going to the AWS Console load balancers.
 
-To access the argoCD, copy the LoadBalancer DNS CNAME record and hit on your favorite browser.
+* #### To access the argoCD, copy the LoadBalancer DNS CNAME record and hit on your favorite browser.
 
-Now, we need to get the password for our argoCD server to perform the deployment.
+* #### Now, we need to get the password for our argoCD server to perform the deployment.
+* 
 <img width="1903" height="961" alt="Screenshot 2025-07-17 111612" src="https://github.com/user-attachments/assets/3f515c9d-a81a-4bf5-864f-181ccff3f6fb" />
 
 <img width="1904" height="295" alt="Screenshot 2025-07-17 111805" src="https://github.com/user-attachments/assets/a1bb025c-e237-49fc-ab77-6fabe2952a33" />
@@ -405,12 +420,12 @@ Now, we need to get the password for our argoCD server to perform the deployment
 
 <img width="1918" height="598" alt="Screenshot 2025-07-17 113122" src="https://github.com/user-attachments/assets/34b4339f-1277-40bb-a662-75da31261f56" />
 
-To do that, we have a pre-requisite which is jq. Install it by the command below.
-Next will deploy our Three-Tier Application using ArgoCD
+* #### To do that, we have a pre-requisite which is jq. Install it by the command below.
+* #### Next will deploy our Three-Tier Application using ArgoCD
 
-As our repository is private. So, we need to configure the Private Repository in ArgoCD.
+* #### As our repository is private. So, we need to configure the Private Repository in ArgoCD.
 
-Then We have to set up applications.
+* #### Then We have to set up applications.
 
 
 <img width="1904" height="974" alt="Screenshot 2025-07-17 113329" src="https://github.com/user-attachments/assets/89faaf1e-0dff-4b76-8d2f-6513414c6ac1" />
@@ -429,7 +444,9 @@ Then We have to set up applications.
 
 <img width="1911" height="984" alt="Screenshot 2025-07-17 120944" src="https://github.com/user-attachments/assets/224930f9-f28b-4fa7-bf89-9cc82d9d6d2e" />
 
+
 <img width="1914" height="930" alt="Screenshot 2025-07-17 122023" src="https://github.com/user-attachments/assets/1b9dbd8d-791f-4a4b-91c5-7aa114eedc04" />
+
 <img width="1911" height="886" alt="Screenshot 2025-07-17 123732" src="https://github.com/user-attachments/assets/ee8c8e01-8693-4fda-9656-1d232520bfbe" />
 
 <img width="1912" height="969" alt="Screenshot 2025-07-17 135534" src="https://github.com/user-attachments/assets/f534f32f-2935-4a6c-8d0f-7d811849ba16" />
@@ -437,7 +454,10 @@ Then We have to set up applications.
 <img width="1916" height="885" alt="Screenshot 2025-07-17 135627" src="https://github.com/user-attachments/assets/1230dfcd-e5f6-433f-9588-4569d1ce407f" />
 
 <img width="1915" height="974" alt="Screenshot 2025-07-17 140434" src="https://github.com/user-attachments/assets/19cff984-d091-4f37-8997-59b94374b583" />
+
 <img width="1912" height="971" alt="Screenshot 2025-07-17 140332" src="https://github.com/user-attachments/assets/07be1929-ed64-4814-a5fa-9783a3da356e" />
+
 <img width="1914" height="970" alt="Screenshot 2025-07-17 135933" src="https://github.com/user-attachments/assets/e6b23702-f04e-4ca8-9364-8d6d0a9c58df" />
+
 <img width="1902" height="966" alt="Screenshot 2025-07-17 140404" src="https://github.com/user-attachments/assets/8e76239f-ad7f-470b-a826-67c701a8ee55" />
 
