@@ -6,6 +6,8 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 <img width="788" height="473" alt="Screenshot 2025-07-17 223454" src="https://github.com/user-attachments/assets/12103aea-e84a-4bda-b036-212fbd00e639" />
 
 
+***
+
 # 1) IAM User Setup:
 ### Creating an IAM user with the necessary permissions for EKS, S3, DynamoDB, ECR, and EC2.
 
