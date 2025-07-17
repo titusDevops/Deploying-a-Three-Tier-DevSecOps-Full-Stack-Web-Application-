@@ -1,4 +1,4 @@
-# Key Project: Three-Tier DevSecOps Web Application   
+# Three-Tier DevSecOps Web Application   
 
 Deployed a **secure and scalable** three-tier web application on AWS EKS, leveraging Docker and DevSecOps practices. Automated CI/CD pipelines with Jenkins, Trivy, and SonarQube for secure, high-quality code delivery. Implemented GitOps using ArgoCD for seamless deployments via Git repositories. Set up Prometheus and Grafana for real-time monitoring with intuitive dashboards. Utilized Terraform for Infrastructure as Code, managing AWS services like ECR, S3, EC2, and DynamoDB for production-ready deployment.
 
