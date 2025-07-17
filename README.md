@@ -108,12 +108,125 @@ Open the EC2-IP:8080 in the browser.
 You can get the password of Jenkins
 
 # 6) SonarQube Setup
+Open Sonarrqube in the browser. 
+
+http://<jenkins-server-public-ip>:9090
+
+username and password for sonarqube is admin.
+
+
+
+Next, We have to perform 5 Steps on the sonarqube setup.
+
+Setup of frontend project for code analysis
+Setup of backend project for code analysis
+Replace the keys in jenkins-pipeline folder, you got from the above two steps. (watch video sonarqube setup)
+create a sonar-token, and save it somewhere for later use in Jenkins.
+create a webhook on the sonarqube dashboard. (http://<jenkins-ec2-server-public-ip>:8080/sonarqube-webhook/)
 
 # 7) Amazon ECR Repositories
+Create two repositories, one for the backend and front end.
+
+Login to ECR on the Jenkins server, using the ECR push command.
+
+
 # 7a) Add Cred. in Jenkins
+Got to Manage Jenkins -> Credentials.
+
+We have to add here a total of 7 Credentials.
+Now We have to configure the installed plugins. (important)
+
+In Tools, We have to configure JDK, sonar-scanner, nodejs, DP-Check, and docker.
+
+Go to Dashboard -> Manage Jenkins -> System
+
+Search for SonarQube installations
+
+Provide the name as it is, then in the Server URL copy the sonarqube public IP (same as Jenkins) with port 9000 select the sonar token that we have added recently, and click on Apply & Save.
 # 8) EKS Cluster Deployment
+We have to create EKS Cluster using the below commands.
+
+Once the cluster is ready, you can validate if the nodes are ready or not.
+
+Now, we will configure the Load Balancer on our EKS because our application will have an ingress controller.
+Download the policy for the LoadBalancer prerequisite.
+
+Create the IAM policy using the below command
+
+Create OIDC Provider
+
+Create a Service Account by using below command and replace your account ID with your one
+Run the below command to deploy the AWS Load Balancer Controller
+
+After 2-3 minutes, run the command below to check whether your pods are running or not.
 # 9) Prometheus and Grafana Installation and Configuration
+What is Grafana?
+
+Grafana is an open-source platform for visualization and analytics. It allows you to query, visualize, alert on, and explore metrics from various data sources.
+
+Steps to Install and Configure Prometheus and Grafana on Kubernetes
+
+Step 1: Add Helm Repositories
+
+Add Helm Stable Chart Repository
+2. Add Prometheus Community Helm Repository
+
+Step 2: Create a Namespace for monitoring
+
+Step 3: Install Prometheus with Grafana using Helm
+
+Install the kube-prometheus-stack chart, which includes both Prometheus and Grafana:
+This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
+
+Step 4: Verify Prometheus Installation
+
+Check the Prometheus pods:
+This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
+
+Step 4: Verify Prometheus Installation
+
+Check the Prometheus pods:
+Check the Prometheus services:
+
+Since Grafana is deployed along with Prometheus, there is no need for separate Grafana installation.
+
+Step 5: Expose Prometheus and Grafana to External Access
+
+There are two ways to expose these services:
+
+NodePort
+LoadBalancer
+
+Exposing Prometheus via LoadBalancer:
+Save the file. The service should now have a load balancer with an external IP to access Prometheus.
+
+Exposing Grafana via LoadBalancer:
+
+Similarly, edit the Grafana service configuration to change ClusterIP to LoadBalancer:
+Save the changes and use the load balancer IP in your browser to access Grafana.
+
+Step 6: Accessing Grafana
+
+The username will be admin and the password will be prom-operator for your Grafana LogIn.
 # 10) Jenkins Pipelines (Frontend & Backend)
 # 11) ArgoCD Installation & Application Deployment
+Now, we will install argoCD.
+
+To do that, create a separate namespace for it and apply the argocd configuration for installation
+All pods must be running, to validate run the below command
+Now, expose the argoCD server as LoadBalancer using the below command
+
+You can validate whether the Load Balancer is created o by going to the AWS Console load balancers.
+
+To access the argoCD, copy the LoadBalancer DNS CNAME record and hit on your favorite browser.
+
+Now, we need to get the password for our argoCD server to perform the deployment.
+
+To do that, we have a pre-requisite which is jq. Install it by the command below.
+Next will deploy our Three-Tier Application using ArgoCD
+
+As our repository is private. So, we need to configure the Private Repository in ArgoCD.
+
+Then We have to set up applications.
 
 
