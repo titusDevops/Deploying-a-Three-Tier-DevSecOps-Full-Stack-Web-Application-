@@ -22,21 +22,21 @@ pipeline {
                 git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/titusDevops/Deploying-a-Three-Tier-DevSecOps-Full-Stack-Web-Application-.git'
             }
         }
-        stage('Sonarqube Analysis') {
-            steps {
-                dir('app-code/frontend/notes-frontend') {
-                    withSonarQubeEnv('sonar-server') {
-                        sh ''' 
-                            $SCANNER_HOME/bin/sonar-scanner \
-                            -Dsonar.projectKey=frontend \
-                            -Dsonar.sources=. \
-                            -Dsonar.host.url=http://44.247.234.73:9000 \
-                            -Dsonar.login=sqp_075fda665140191473c6bf2935f5fa0e02ab4ef2
-                        '''
-                    }
-                }
-            }
-        }
+        // stage('Sonarqube Analysis') {
+        //     steps {
+        //         dir('app-code/frontend/notes-frontend') {
+        //             withSonarQubeEnv('sonar-server') {
+        //                 sh ''' 
+        //                     $SCANNER_HOME/bin/sonar-scanner \
+        //                     -Dsonar.projectKey=frontend \
+        //                     -Dsonar.sources=. \
+        //                     -Dsonar.host.url=http://44.247.234.73:9000 \
+        //                     -Dsonar.login=sqp_075fda665140191473c6bf2935f5fa0e02ab4ef2
+        //                 '''
+        //             }
+        //         }
+        //     }
+        // }
         // stage('Quality Check') {
         //     steps {
         //         script {
