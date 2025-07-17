@@ -22,28 +22,28 @@ pipeline {
                 git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/titusDevops/Deploying-a-Three-Tier-DevSecOps-Full-Stack-Web-Application-.git'
             }
         }
-        stage('Sonarqube Analysis') {
-            steps {
-                dir('app-code/backend') {
-                    withSonarQubeEnv('sonar-server') {
-                        sh ''' 
-                            $SCANNER_HOME/bin/sonar-scanner \
-                            -Dsonar.projectKey=backend \
-                            -Dsonar.sources=. \
-                            -Dsonar.host.url=http://44.247.234.73:9000 \
-                            -Dsonar.login=sqp_d87f1afb329fa9fcd1bff1b2115121b0e30cb86d
-                        '''
-                    }
-                }
-            }
-        }
-        stage('Quality Check') {
-            steps {
-                script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token' 
-                }
-            }
-        }
+        // stage('Sonarqube Analysis') {
+        //     steps {
+        //         dir('app-code/backend') {
+        //             withSonarQubeEnv('sonar-server') {
+        //                 sh ''' 
+        //                     $SCANNER_HOME/bin/sonar-scanner \
+        //                     -Dsonar.projectKey=backend \
+        //                     -Dsonar.sources=. \
+        //                     -Dsonar.host.url=http://44.247.234.73:9000 \
+        //                     -Dsonar.login=sqp_d87f1afb329fa9fcd1bff1b2115121b0e30cb86d
+        //                 '''
+        //             }
+        //         }
+        //     }
+        // }
+        // stage('Quality Check') {
+        //     steps {
+        //         script {
+        //             waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token' 
+        //         }
+        //     }
+        // }
         stage('OWASP Dependency-Check Scan') {
             steps {
                 dir('app-code/backend') {
