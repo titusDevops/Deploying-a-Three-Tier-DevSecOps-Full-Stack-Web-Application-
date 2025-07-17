@@ -89,34 +89,42 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 # 4) Jenkins EC2 Server Setup with Terraform:
 
-* #### Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server
-* #### Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server.
 
-* #### Now run this command to create a Jenkins server.
 
-* #### terraform init
-* #### terraform validate
-* #### terraform apply
-
-* #### Now ssh to your server :
-
-* #### Make sure you run these commands from the folder where your pem file exist.
-
-* #### chmod 400 "devsecops-project.pem"
 
 * #### ssh -i "devsecops-project.pem" ubuntu@35.92.246.29
 
 * #### configure aws on the Jenkins server(EC2 Instance). As you did for your local machine.
 
+* #### Next, I ran a command to create .pem file for my Jenkins instance. It will be used to ssh into the server.
+* #### Now run this command to create a Jenkins server.
+
+
 <img width="1671" height="131" alt="Screenshot 2025-07-15 114913" src="https://github.com/user-attachments/assets/1297b37f-94db-4c0a-8c98-cf1e37493788" />
+
+* #### terraform init
+
 
 <img width="1442" height="548" alt="Screenshot 2025-07-15 152055" src="https://github.com/user-attachments/assets/393001eb-e790-4fdf-82a8-480ed71ba399" />
 
+* #### terraform validate
+
+
 <img width="1454" height="84" alt="Screenshot 2025-07-15 152140" src="https://github.com/user-attachments/assets/f9eb6736-cd25-4781-8a26-05ba952640fa" />
+
+
+* #### terraform plan
+
 
 <img width="1579" height="641" alt="Screenshot 2025-07-16 081150" src="https://github.com/user-attachments/assets/138df48f-61a5-4a01-a102-1604ac7888be" />
 
+* #### ssh to my server :
+
+
 <img width="1579" height="641" alt="Screenshot 2025-07-16 081150" src="https://github.com/user-attachments/assets/12f14fbb-ffdc-4367-ae82-f2928c9e6607" />
+
+* #### chmod 400 "devsecops-project.pem"
+
 
 <img width="1426" height="763" alt="Screenshot 2025-07-16 081245" src="https://github.com/user-attachments/assets/4ddbe5a3-1878-436c-969d-551e3830d4f7" />
 
