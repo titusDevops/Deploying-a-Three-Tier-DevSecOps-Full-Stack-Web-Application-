@@ -118,20 +118,22 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 <img width="1579" height="641" alt="Screenshot 2025-07-16 081150" src="https://github.com/user-attachments/assets/138df48f-61a5-4a01-a102-1604ac7888be" />
 
-* #### ssh to my server :
+
 
 
 <img width="1579" height="641" alt="Screenshot 2025-07-16 081150" src="https://github.com/user-attachments/assets/12f14fbb-ffdc-4367-ae82-f2928c9e6607" />
 
-* #### chmod 400 "devsecops-project.pem"
 
-
+* #### terraform apply
+  
 <img width="1426" height="763" alt="Screenshot 2025-07-16 081245" src="https://github.com/user-attachments/assets/4ddbe5a3-1878-436c-969d-551e3830d4f7" />
 
 <img width="1437" height="761" alt="Screenshot 2025-07-16 081317" src="https://github.com/user-attachments/assets/523f3138-50bb-4b6c-a13e-851099e016d2" />
 
-
 <img width="1420" height="733" alt="Screenshot 2025-07-16 082750" src="https://github.com/user-attachments/assets/81dee992-6dbe-4cd9-82cd-aab78c2d0e20" />
+
+* #### ssh to my server
+* #### chmod 400 "devsecops-project.pem"
 
 <img width="1885" height="949" alt="Screenshot 2025-07-16 102240" src="https://github.com/user-attachments/assets/cf657ee8-d3f1-448d-83dc-961ea15add4e" />
 
