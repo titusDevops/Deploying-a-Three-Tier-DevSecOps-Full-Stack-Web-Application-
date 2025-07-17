@@ -91,7 +91,7 @@ pipeline {
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "three-tier-devsecops-project"
+                GIT_REPO_NAME = "Deploying-a-Three-Tier-DevSecOps-Full-Stack-Web-Application-"
                 GIT_USER_NAME = "titoDevops"
             }
             steps {
