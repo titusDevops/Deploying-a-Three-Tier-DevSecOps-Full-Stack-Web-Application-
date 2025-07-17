@@ -65,12 +65,14 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 ### I am creating S3 Bucket and Dynamo DB as they are required for Terraform's backend state.
 
 * #### Created an S3 bucket successfully and the S3 bucket name has to be a unique name.
-  
-<img width="1906" height="759" alt="Screenshot 2025-07-15 103649" src="https://github.com/user-attachments/assets/5c3e8301-5725-4d42-b8af-1e7778155566" />
+
+
+ <img width="1906" height="759" alt="Screenshot 2025-07-15 103649" src="https://github.com/user-attachments/assets/7e385150-8e0c-430c-a284-8aa43afb3a33" />
+
 
 * #### Created a DynamoDB table successfully and the DynamoDB table name will be lock-files  , and the partition key will be LockID.
   
-<img width="1919" height="898" alt="Screenshot 2025-07-15 104845" src="https://github.com/user-attachments/assets/50432641-05c3-4546-a15c-28ffd6951bba" />
+<img width="1919" height="898" alt="Screenshot 2025-07-15 104845" src="https://github.com/user-attachments/assets/0e16463f-8157-4ad0-82d2-061242df7531" />
 
 # 4) Jenkins EC2 Server Setup with Terraform:
 
