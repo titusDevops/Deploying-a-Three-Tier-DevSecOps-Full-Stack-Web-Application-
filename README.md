@@ -1,5 +1,5 @@
 
-# Deploying a Three-Tier DevSecOps Full Stack Web Application on AWS EKS using ArgoCD, Prometheus, Grafana and Jenkins
+# Deploying a Three-Tier DevSecOps Full Stack Web Application on AWS EKS using ArgoCD, Prometheus, Grafana and Jenkins tito
 Deploy a secure and scalable three-tier web application on AWS EKS using Docker and DevSecOps best practices. This project automates CI/CD with Jenkins, ArgoCD, SonarQube, and Trivy for code quality and security, while Prometheus and Grafana provide real-time monitoring. It leverages AWS services like ECR, S3, EC2, and DynamoDB, with Terraform managing full Infrastructure as Code (IaC) for seamless provisioning and deployment.
 
 
