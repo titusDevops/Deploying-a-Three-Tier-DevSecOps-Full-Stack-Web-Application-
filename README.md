@@ -102,4 +102,9 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 <img width="1891" height="969" alt="Screenshot 2025-07-16 102308" src="https://github.com/user-attachments/assets/c61a8cb6-92af-4d84-88df-4472e1f52dcd" />
 <img width="1893" height="985" alt="Screenshot 2025-07-16 102326" src="https://github.com/user-attachments/assets/bb84018f-740a-40ee-a3f3-095ef3144236" />
 
+# 5) Installing Plugins on Jenkins
+Open the EC2-IP:8080 in the browser. 
+
+You can get the password of Jenkins
+
 
