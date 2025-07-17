@@ -80,6 +80,22 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 # 4) Jenkins EC2 Server Setup with Terraform:
 
 * #### Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server
+* Next, we have to run the command to create .pem file for our Jenkins instance. will be used to ssh the server.
+
+Now run this command to create a Jenkins server.
+
+terraform init
+terraform validate
+terraform apply
+
+Now ssh to your server :
+
+Make sure you run these commands from the folder where your pem file exist.
+chmod 400 "devsecops-project.pem"
+
+ssh -i "devsecops-project.pem" ubuntu@35.92.246.29
+
+configure aws on the Jenkins server(EC2 Instance). As you did for your local machine.
 
 <img width="1671" height="131" alt="Screenshot 2025-07-15 114913" src="https://github.com/user-attachments/assets/1297b37f-94db-4c0a-8c98-cf1e37493788" />
 
