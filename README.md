@@ -8,6 +8,7 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 ***
 
+
 # 1) IAM User Setup:
 ### Creating an IAM user with the necessary permissions for EKS, S3, DynamoDB, ECR, and EC2.
 
@@ -45,6 +46,8 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 <img width="1904" height="910" alt="Screenshot 2025-07-13 101342" src="https://github.com/user-attachments/assets/f20db528-a238-4c1e-a9dc-46f6997feab9" />
 
 
+***
+
 # 2) Terraform & AWS CLI Installation:
 
 ### Installing Terraform and AWS CLI on my local machine and configuring AWS CLI with IAM credentials.
@@ -64,6 +67,9 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
  <img width="1890" height="413" alt="Screenshot 2025-07-15 094400-redacted_dot_app (1)" src="https://github.com/user-attachments/assets/0272a747-83c1-45c2-986f-576265a19d38" />
 
 
+***
+
+
 # 3) S3 Bucket and DynamoDB Table:
 
 ### I am creating S3 Bucket and Dynamo DB as they are required for Terraform's backend state.
@@ -77,6 +83,9 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 * #### Created a DynamoDB table successfully and the DynamoDB table name will be lock-files  , and the partition key will be LockID.
   
 <img width="1919" height="898" alt="Screenshot 2025-07-15 104845" src="https://github.com/user-attachments/assets/0e16463f-8157-4ad0-82d2-061242df7531" />
+
+
+***
 
 # 4) Jenkins EC2 Server Setup with Terraform:
 
@@ -122,9 +131,13 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 <img width="1893" height="985" alt="Screenshot 2025-07-16 102326" src="https://github.com/user-attachments/assets/bb84018f-740a-40ee-a3f3-095ef3144236" />
 
+
+***
+
+
 # 5) Installing Plugins on Jenkins
 * #### Open the EC2-IP:8080 in the browser.
-* 
+ 
 <img width="1903" height="1015" alt="Screenshot 2025-07-16 110851" src="https://github.com/user-attachments/assets/e294b07e-f642-44a7-8ea5-da9eab6d65eb" />
 
 <img width="1907" height="936" alt="Screenshot 2025-07-16 111032" src="https://github.com/user-attachments/assets/91a0966e-68fe-429c-882b-195951f1455c" />
@@ -141,7 +154,7 @@ You can get the password of Jenkins
 
 <img width="1896" height="890" alt="Screenshot 2025-07-16 114502" src="https://github.com/user-attachments/assets/6734cc6a-29f8-4678-8306-81bbdf65e2a1" />
 
-We have to install all these mentioned plugins.
+* #### We have to install all these mentioned plugins.
 
 * #### AWS Credentials
 * #### AWS Steps
@@ -157,6 +170,10 @@ We have to install all these mentioned plugins.
 
 <img width="1902" height="881" alt="Screenshot 2025-07-16 122514" src="https://github.com/user-attachments/assets/42b0d0fa-4b78-40b9-9605-b249eaeb38b1" />
 
+
+***
+
+
 # 6) SonarQube Setup
 * #### Open Sonarrqube in the browser. 
 
@@ -169,14 +186,14 @@ We have to install all these mentioned plugins.
 
 
 
-Next, We have to perform 5 Steps on the sonarqube setup.
+* #### Next, We have to perform 5 Steps on the sonarqube setup.
 
-Setup of frontend project for code analysis
+* #### Setup of frontend project for code analysis
 <img width="1916" height="764" alt="Screenshot 2025-07-16 123909" src="https://github.com/user-attachments/assets/3e71e004-23cd-48ae-b47b-49c3f7bf769a" />
 
 <img width="1782" height="778" alt="Screenshot 2025-07-16 124048" src="https://github.com/user-attachments/assets/bf8c4ee3-05ba-4515-9b5a-13cf3b802e7c" />
 
-Setup of backend project for code analysis
+* #### Setup of backend project for code analysis
 <img width="1916" height="858" alt="Screenshot 2025-07-16 123938" src="https://github.com/user-attachments/assets/f327179f-90a8-41b4-a81f-8df8a08885e0" />
 
 <img width="1893" height="886" alt="Screenshot 2025-07-16 125004" src="https://github.com/user-attachments/assets/0610c814-014e-4a42-bca3-f6ef5c74bcaa" />
@@ -187,14 +204,17 @@ Setup of backend project for code analysis
 
 <img width="1758" height="735" alt="Screenshot 2025-07-16 125608" src="https://github.com/user-attachments/assets/1d92de96-288a-4d42-b904-46814146627f" />
 
-create a webhook on the sonarqube dashboard. (http://<jenkins-ec2-server-public-ip>:8080/sonarqube-webhook/)
+* #### create a webhook on the sonarqube dashboard. (http://<jenkins-ec2-server-public-ip>:8080/sonarqube-webhook/)
 
 <img width="1881" height="876" alt="Screenshot 2025-07-16 125945" src="https://github.com/user-attachments/assets/351b3483-1517-426e-bb0c-c76bd440cda4" />
 
 <img width="1904" height="863" alt="Screenshot 2025-07-16 130050" src="https://github.com/user-attachments/assets/8c4c0f36-142f-4e95-8186-064e2320cea7" />
 
+
+***
+
 # 7) Amazon ECR Repositories
-Create two repositories, one for the backend and front end.
+* #### Create two repositories, one for the backend and front end.
 <img width="1902" height="867" alt="Screenshot 2025-07-16 132220" src="https://github.com/user-attachments/assets/be3d23d8-45e3-4d04-b0ae-5351ff53bd3e" />
 
 <img width="1902" height="874" alt="Screenshot 2025-07-16 132254" src="https://github.com/user-attachments/assets/f7cce2df-720e-446f-be55-00a2df951a65" />
@@ -202,10 +222,14 @@ Create two repositories, one for the backend and front end.
 
 <img width="1906" height="865" alt="Screenshot 2025-07-16 132440" src="https://github.com/user-attachments/assets/539421bc-5cbc-4664-99e7-7c9f0fd7f47d" />
 
-Login to ECR on the Jenkins server, using the ECR push command.
+* #### Login to ECR on the Jenkins server, using the ECR push command.
 <img width="1907" height="891" alt="Screenshot 2025-07-16 132804" src="https://github.com/user-attachments/assets/ca0da184-9098-469a-a5e6-fed90130268c" />
 
 <img width="1887" height="1015" alt="Screenshot 2025-07-16 133002" src="https://github.com/user-attachments/assets/42b7e57c-7e18-4b29-b00f-36d1a50e1e44" />
+
+
+***
+
 
 # 7a) Add Cred. in Jenkins
 * #### Got to Manage Jenkins -> Credentials.
@@ -224,7 +248,7 @@ Login to ECR on the Jenkins server, using the ECR push command.
 
 <img width="1820" height="842" alt="Screenshot 2025-07-16 143016" src="https://github.com/user-attachments/assets/37e4bdf6-b5e5-4595-a92a-d78163a95d6a" />
 
-Now We have to configure the installed plugins. (important)
+* #### Now We have to configure the installed plugins. (important)
 
 <img width="1794" height="681" alt="Screenshot 2025-07-16 144433" src="https://github.com/user-attachments/assets/2030f41a-b91b-4a84-a556-b5e35d047f58" />
 
@@ -246,6 +270,9 @@ Now We have to configure the installed plugins. (important)
 * #### Search for SonarQube installations
 
 Provide the name as it is, then in the Server URL copy the sonarqube public IP (same as Jenkins) with port 9000 select the sonar token that we have added recently, and click on Apply & Save.
+
+***
+
 # 8) EKS Cluster Deployment
 
 
@@ -279,7 +306,11 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1893" height="616" alt="Screenshot 2025-07-16 155803" src="https://github.com/user-attachments/assets/f0a92454-58b9-4048-9dc1-2ef76fb09749" />
 
 * #### After 2-3 minutes, run the command below to check whether your pods are running or not.
-* 
+
+
+  ***
+
+  
 # 9) Prometheus and Grafana Installation and Configuration
 
 
@@ -287,7 +318,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1465" height="86" alt="Screenshot 2025-07-16 160141" src="https://github.com/user-attachments/assets/af16013a-fb13-4d80-bcd0-2ab773093284" />
 
 * #### Add Helm Stable Chart Repository
-2. Add Prometheus Community Helm Repository
+* #### 2. Add Prometheus Community Helm Repository
 <img width="1905" height="821" alt="Screenshot 2025-07-16 160610" src="https://github.com/user-attachments/assets/32ddec39-d912-4985-963e-9b0048995b8a" />
 
 <img width="1907" height="598" alt="Screenshot 2025-07-16 161438" src="https://github.com/user-attachments/assets/788e5f0c-40c3-437f-b04d-50716c74bf56" />
@@ -372,6 +403,9 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1912" height="909" alt="Screenshot 2025-07-16 170941" src="https://github.com/user-attachments/assets/9eb11db6-c629-413d-9a36-60161947f7b4" />
 
 
+***
+
+
 # 10) Jenkins Pipelines (Frontend & Backend)
 
 <img width="1898" height="886" alt="Screenshot 2025-07-16 171212" src="https://github.com/user-attachments/assets/b9310bc0-a60c-416f-86a7-9abdd7452403" />
@@ -389,6 +423,9 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1910" height="927" alt="Screenshot 2025-07-17 100741" src="https://github.com/user-attachments/assets/5588a6be-5a75-4a2e-84bc-8454ed2823b5" />
 
 <img width="1803" height="732" alt="Screenshot 2025-07-17 100753" src="https://github.com/user-attachments/assets/6d18eb1a-bf50-4662-a34e-028ac5b94006" />
+
+
+***
 
 
 # 11) ArgoCD Installation & Application Deployment
@@ -409,7 +446,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 * #### To access the argoCD, copy the LoadBalancer DNS CNAME record and hit on your favorite browser.
 
 * #### Now, we need to get the password for our argoCD server to perform the deployment.
-* 
+  
 <img width="1903" height="961" alt="Screenshot 2025-07-17 111612" src="https://github.com/user-attachments/assets/3f515c9d-a81a-4bf5-864f-181ccff3f6fb" />
 
 <img width="1904" height="295" alt="Screenshot 2025-07-17 111805" src="https://github.com/user-attachments/assets/a1bb025c-e237-49fc-ab77-6fabe2952a33" />
