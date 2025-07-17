@@ -98,4 +98,8 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 <img width="1420" height="733" alt="Screenshot 2025-07-16 082750" src="https://github.com/user-attachments/assets/81dee992-6dbe-4cd9-82cd-aab78c2d0e20" />
 
-![Uploading Screenshot 2025-07-16 102240.png…]()
+<img width="1885" height="949" alt="Screenshot 2025-07-16 102240" src="https://github.com/user-attachments/assets/cf657ee8-d3f1-448d-83dc-961ea15add4e" />
+<img width="1891" height="969" alt="Screenshot 2025-07-16 102308" src="https://github.com/user-attachments/assets/c61a8cb6-92af-4d84-88df-4472e1f52dcd" />
+<img width="1893" height="985" alt="Screenshot 2025-07-16 102326" src="https://github.com/user-attachments/assets/bb84018f-740a-40ee-a3f3-095ef3144236" />
+
+
