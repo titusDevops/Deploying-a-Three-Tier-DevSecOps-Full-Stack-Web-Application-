@@ -74,6 +74,9 @@ Deploy a secure and scalable three-tier web application on AWS EKS using Docker 
 
 # 4) Jenkins EC2 Server Setup with Terraform:
 
+<img width="1919" height="898" alt="Screenshot 2025-07-15 104845" src="https://github.com/user-attachments/assets/50432641-05c3-4546-a15c-28ffd6951bba" />
+
+
 
 
 
