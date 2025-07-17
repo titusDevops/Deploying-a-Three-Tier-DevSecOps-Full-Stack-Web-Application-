@@ -107,4 +107,13 @@ Open the EC2-IP:8080 in the browser.
 
 You can get the password of Jenkins
 
+# 6) SonarQube Setup
+
+# 7) Amazon ECR Repositories
+# 7a) Add Cred. in Jenkins
+# 8) EKS Cluster Deployment
+# 9) Prometheus and Grafana Installation and Configuration
+# 10) Jenkins Pipelines (Frontend & Backend)
+# 11) ArgoCD Installation & Application Deployment
+
 
