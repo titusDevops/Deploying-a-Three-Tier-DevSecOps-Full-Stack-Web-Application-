@@ -89,10 +89,6 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 # 4) Jenkins EC2 Server Setup with Terraform:
 
 
-
-
-* #### ssh -i "devsecops-project.pem" ubuntu@35.92.246.29
-
 * #### configure aws on the Jenkins server(EC2 Instance). As you did for your local machine.
 
 * #### Next, I ran a command to create .pem file for my Jenkins instance. It will be used to ssh into the server.
@@ -131,8 +127,9 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 
 <img width="1420" height="733" alt="Screenshot 2025-07-16 082750" src="https://github.com/user-attachments/assets/81dee992-6dbe-4cd9-82cd-aab78c2d0e20" />
 
-* #### ssh to my server
 * #### chmod 400 "devsecops-project.pem"
+* #### ssh -i "devsecops-project.pem" ubuntu@35.92.246.29
+
 
 <img width="1885" height="949" alt="Screenshot 2025-07-16 102240" src="https://github.com/user-attachments/assets/cf657ee8-d3f1-448d-83dc-961ea15add4e" />
 
@@ -145,13 +142,13 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 
 
 # 5) Installing Plugins on Jenkins
-* #### Open the EC2-IP:8080 in the browser.
+* #### Opening the EC2-IP:8080 in the browser.
  
 <img width="1903" height="1015" alt="Screenshot 2025-07-16 110851" src="https://github.com/user-attachments/assets/e294b07e-f642-44a7-8ea5-da9eab6d65eb" />
 
 <img width="1907" height="936" alt="Screenshot 2025-07-16 111032" src="https://github.com/user-attachments/assets/91a0966e-68fe-429c-882b-195951f1455c" />
 
-You can get the password of Jenkins
+* #### Retreiving the password of Jenkins and logging in
 
 <img width="1458" height="156" alt="Screenshot 2025-07-16 111048" src="https://github.com/user-attachments/assets/713d50cd-a7c5-4fbd-a4c6-af94d6709b99" />
 
@@ -161,21 +158,17 @@ You can get the password of Jenkins
 
 <img width="1889" height="905" alt="Screenshot 2025-07-16 112117" src="https://github.com/user-attachments/assets/cc7b3911-f4ec-4f6d-be67-43d3db9aa255" />
 
+* #### Welcome to Jenkins
+
 <img width="1896" height="890" alt="Screenshot 2025-07-16 114502" src="https://github.com/user-attachments/assets/6734cc6a-29f8-4678-8306-81bbdf65e2a1" />
 
-* #### We have to install all these mentioned plugins.
-
-* #### AWS Credentials
-* #### AWS Steps
-* #### Docker plugins
-* #### Eclipse Temurin installer
-* #### NodeJS
-* #### OWASP Dependency-Check,
-* #### SonarQube Scanner.
+* #### Installing all 7 plugins that is  AWS Credentials, AWS Steps, Docker plugins, Eclipse Temurin installer, NodeJS, OWASP Dependency-Check and SonarQube Scanner
   
 <img width="1897" height="886" alt="Screenshot 2025-07-16 121947" src="https://github.com/user-attachments/assets/9de81502-f14d-43f8-a121-96bc15670c76" />
 
 <img width="1897" height="886" alt="Screenshot 2025-07-16 121947" src="https://github.com/user-attachments/assets/048c5514-392d-4bd2-97a8-e06645eccbb7" />
+
+* #### Plugin installation sucess
 
 <img width="1902" height="881" alt="Screenshot 2025-07-16 122514" src="https://github.com/user-attachments/assets/42b0d0fa-4b78-40b9-9605-b249eaeb38b1" />
 
@@ -184,36 +177,32 @@ You can get the password of Jenkins
 
 
 # 6) SonarQube Setup
-* #### Open Sonarrqube in the browser. 
-
-* #### http://<jenkins-server-public-ip>:9090
-* #### username and password for sonarqube is admin.
+* #### I opened Sonarrqube in the browser at http://<jenkins-server-public-ip>:9090 and the username and password for sonarqube is admin. But update the password after logging in.
 
 <img width="1904" height="1005" alt="Screenshot 2025-07-16 123200" src="https://github.com/user-attachments/assets/5136bcf4-c7e2-4bef-a843-f05f3fa4e7f1" />
 
 <img width="1080" height="689" alt="Screenshot 2025-07-16 123315" src="https://github.com/user-attachments/assets/633bdecb-d71c-4e4c-bee4-7c114631c732" />
 
 
-
-* #### Next, We have to perform 5 Steps on the sonarqube setup.
+* #### Now I have to perform 5 Steps on the sonarqube setup.
 
 * #### Setup of frontend project for code analysis
+* 
 <img width="1916" height="764" alt="Screenshot 2025-07-16 123909" src="https://github.com/user-attachments/assets/3e71e004-23cd-48ae-b47b-49c3f7bf769a" />
 
 <img width="1782" height="778" alt="Screenshot 2025-07-16 124048" src="https://github.com/user-attachments/assets/bf8c4ee3-05ba-4515-9b5a-13cf3b802e7c" />
 
 * #### Setup of backend project for code analysis
+* 
 <img width="1916" height="858" alt="Screenshot 2025-07-16 123938" src="https://github.com/user-attachments/assets/f327179f-90a8-41b4-a81f-8df8a08885e0" />
 
 <img width="1893" height="886" alt="Screenshot 2025-07-16 125004" src="https://github.com/user-attachments/assets/0610c814-014e-4a42-bca3-f6ef5c74bcaa" />
 
-
-* #### Replace the keys in jenkins-pipeline folder, you got from the above two steps. (watch video sonarqube setup)
-* #### create a sonar-token, and save it somewhere for later use in Jenkins.
+* #### I created a sonar-token, and saved it somewhere for later use in Jenkins
 
 <img width="1758" height="735" alt="Screenshot 2025-07-16 125608" src="https://github.com/user-attachments/assets/1d92de96-288a-4d42-b904-46814146627f" />
 
-* #### create a webhook on the sonarqube dashboard. (http://<jenkins-ec2-server-public-ip>:8080/sonarqube-webhook/)
+* #### I created a webhook on the sonarqube dashboard. (http://<jenkins-ec2-server-public-ip>:8080/sonarqube-webhook/)
 
 <img width="1881" height="876" alt="Screenshot 2025-07-16 125945" src="https://github.com/user-attachments/assets/351b3483-1517-426e-bb0c-c76bd440cda4" />
 
@@ -223,15 +212,17 @@ You can get the password of Jenkins
 ***
 
 # 7) Amazon ECR Repositories
-* #### Create two repositories, one for the backend and front end.
+
+* #### Created two repositories, one for the backend and front end.
 <img width="1902" height="867" alt="Screenshot 2025-07-16 132220" src="https://github.com/user-attachments/assets/be3d23d8-45e3-4d04-b0ae-5351ff53bd3e" />
 
 <img width="1902" height="874" alt="Screenshot 2025-07-16 132254" src="https://github.com/user-attachments/assets/f7cce2df-720e-446f-be55-00a2df951a65" />
 
-
+* #### Successifully created the repositories in ECR
 <img width="1906" height="865" alt="Screenshot 2025-07-16 132440" src="https://github.com/user-attachments/assets/539421bc-5cbc-4664-99e7-7c9f0fd7f47d" />
 
 * #### Login to ECR on the Jenkins server, using the ECR push command.
+  
 <img width="1907" height="891" alt="Screenshot 2025-07-16 132804" src="https://github.com/user-attachments/assets/ca0da184-9098-469a-a5e6-fed90130268c" />
 
 <img width="1887" height="1015" alt="Screenshot 2025-07-16 133002" src="https://github.com/user-attachments/assets/42b7e57c-7e18-4b29-b00f-36d1a50e1e44" />
@@ -241,11 +232,14 @@ You can get the password of Jenkins
 
 
 # 7a) Add Cred. in Jenkins
-* #### Got to Manage Jenkins -> Credentials.
 
-* #### We have to add here a total of 7 Credentials.
+* #### I added a total of 7 Credentials.
+
+* #### AWS
 
 <img width="1866" height="903" alt="Screenshot 2025-07-16 134702" src="https://github.com/user-attachments/assets/17347937-ceec-49a1-97ce-7799051b4177" />
+
+* #### Github
 
 <img width="1798" height="801" alt="Screenshot 2025-07-16 140616" src="https://github.com/user-attachments/assets/085cd890-9189-41e3-8dff-9eff90e9eeda" />
 
