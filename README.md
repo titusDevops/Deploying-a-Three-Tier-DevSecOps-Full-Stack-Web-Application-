@@ -1,4 +1,5 @@
-<img width="1894" height="936" alt="Screenshot 2025-07-16 152550" src="https://github.com/user-attachments/assets/4bf900ec-acb3-4777-a704-5562d14f674d" /><img width="1915" height="971" alt="Screenshot 2025-07-16 145913" src="https://github.com/user-attachments/assets/f9121bf9-0053-492a-8456-d89f3e15aca4" />
+
+
 # Deploying a Three-Tier DevSecOps Full Stack Web Application on AWS EKS using ArgoCD, Prometheus, Grafana and Jenkins 
 Deploy a secure and scalable three-tier web application on AWS EKS using Docker and DevSecOps best practices. This project automates CI/CD with Jenkins, ArgoCD, SonarQube, and Trivy for code quality and security, while Prometheus and Grafana provide real-time monitoring. It leverages AWS services like ECR, S3, EC2, and DynamoDB, with Terraform managing full Infrastructure as Code (IaC) for seamless provisioning and deployment.
 
@@ -233,6 +234,8 @@ Search for SonarQube installations
 
 Provide the name as it is, then in the Server URL copy the sonarqube public IP (same as Jenkins) with port 9000 select the sonar token that we have added recently, and click on Apply & Save.
 # 8) EKS Cluster Deployment
+
+
 We have to create EKS Cluster using the below commands.
 <img width="1915" height="971" alt="Screenshot 2025-07-16 145913" src="https://github.com/user-attachments/assets/87ba2dcc-954e-4aea-baff-2a6bd4157bfd" />
 <img width="1904" height="938" alt="Screenshot 2025-07-16 152401" src="https://github.com/user-attachments/assets/50c6fa85-d8c3-4c5d-8623-ba9fad1e3178" />
