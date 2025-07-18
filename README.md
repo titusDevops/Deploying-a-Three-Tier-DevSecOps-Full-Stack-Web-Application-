@@ -449,42 +449,44 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1892" height="975" alt="Screenshot 2025-07-17 111535" src="https://github.com/user-attachments/assets/34badcac-c5a5-479b-9fab-23e98eaa351f" />
 
-* #### All pods must be running, to validate run the below command
-* #### Now, expose the argoCD server as LoadBalancer using the below command
-
-* #### You can validate whether the Load Balancer is created o by going to the AWS Console load balancers.
-
-* #### To access the argoCD, copy the LoadBalancer DNS CNAME record and hit on your favorite browser.
-
-* #### Now, we need to get the password for our argoCD server to perform the deployment.
-  
-<img width="1903" height="961" alt="Screenshot 2025-07-17 111612" src="https://github.com/user-attachments/assets/3f515c9d-a81a-4bf5-864f-181ccff3f6fb" />
+* #### All pods must be running and we need to validate 
 
 <img width="1904" height="295" alt="Screenshot 2025-07-17 111805" src="https://github.com/user-attachments/assets/a1bb025c-e237-49fc-ab77-6fabe2952a33" />
+
+* #### Now, exposing the argoCD server as LoadBalancer
+
+ <img width="1919" height="106" alt="Screenshot 2025-07-17 112612" src="https://github.com/user-attachments/assets/f6d572ec-ee8f-456a-ae1b-f0436f00fc16" />
+
+
+* #### Now, we need to get the password for our argoCD server to perform the deployment. To do that, we have a pre-requisite which is jq. Installing it by the command below.
+  
+<img width="1893" height="1011" alt="Screenshot 2025-07-17 114616" src="https://github.com/user-attachments/assets/26ade10b-b963-41e7-b383-d02c6df80a93" />
+
+<img width="1919" height="244" alt="Screenshot 2025-07-17 114726" src="https://github.com/user-attachments/assets/946eb856-7f9b-4960-8728-aefa177bda7c" />
+  
+<img width="1903" height="961" alt="Screenshot 2025-07-17 111612" src="https://github.com/user-attachments/assets/3f515c9d-a81a-4bf5-864f-181ccff3f6fb" />
 
 <img width="1907" height="305" alt="Screenshot 2025-07-17 112324" src="https://github.com/user-attachments/assets/d22034b5-e431-497f-a333-78e7c3956c06" />
 
 <img width="1732" height="34" alt="Screenshot 2025-07-17 112556" src="https://github.com/user-attachments/assets/66f143ff-96f1-4e9a-be43-463a768f5b01" />
 
-<img width="1919" height="106" alt="Screenshot 2025-07-17 112612" src="https://github.com/user-attachments/assets/f6d572ec-ee8f-456a-ae1b-f0436f00fc16" />
-
 <img width="1918" height="598" alt="Screenshot 2025-07-17 113122" src="https://github.com/user-attachments/assets/34b4339f-1277-40bb-a662-75da31261f56" />
 
-* #### To do that, we have a pre-requisite which is jq. Install it by the command below.
 * #### Next will deploy our Three-Tier Application using ArgoCD
 
 * #### As our repository is private. So, we need to configure the Private Repository in ArgoCD.
 
-* #### Then We have to set up applications.
+* #### Then We have to set up database, backend, frontend , frontend ingress and backend-ingress applications.
 
+<img width="1915" height="974" alt="Screenshot 2025-07-17 140434" src="https://github.com/user-attachments/assets/19cff984-d091-4f37-8997-59b94374b583" />
 
 <img width="1904" height="974" alt="Screenshot 2025-07-17 113329" src="https://github.com/user-attachments/assets/89faaf1e-0dff-4b76-8d2f-6513414c6ac1" />
 
-<img width="1893" height="1011" alt="Screenshot 2025-07-17 114616" src="https://github.com/user-attachments/assets/26ade10b-b963-41e7-b383-d02c6df80a93" />
-
-<img width="1919" height="244" alt="Screenshot 2025-07-17 114726" src="https://github.com/user-attachments/assets/946eb856-7f9b-4960-8728-aefa177bda7c" />
-
 <img width="1919" height="975" alt="Screenshot 2025-07-17 114835" src="https://github.com/user-attachments/assets/d4e26648-bd14-4483-a22b-630f922116a3" />
+
+<img width="1912" height="971" alt="Screenshot 2025-07-17 140332" src="https://github.com/user-attachments/assets/07be1929-ed64-4814-a5fa-9783a3da356e" />
+
+<img width="1902" height="966" alt="Screenshot 2025-07-17 140404" src="https://github.com/user-attachments/assets/8e76239f-ad7f-470b-a826-67c701a8ee55" />
 
 <img width="1900" height="943" alt="Screenshot 2025-07-17 114938" src="https://github.com/user-attachments/assets/c7b6bd9a-d676-4e2f-8f32-ec3312625ec3" />
 
@@ -493,21 +495,18 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1892" height="980" alt="Screenshot 2025-07-17 120858" src="https://github.com/user-attachments/assets/95d04009-df18-4e26-892e-ee1e97dff0bd" />
 
 <img width="1911" height="984" alt="Screenshot 2025-07-17 120944" src="https://github.com/user-attachments/assets/224930f9-f28b-4fa7-bf89-9cc82d9d6d2e" />
-
-
-<img width="1914" height="930" alt="Screenshot 2025-07-17 122023" src="https://github.com/user-attachments/assets/1b9dbd8d-791f-4a4b-91c5-7aa114eedc04" />
-
-<img width="1911" height="886" alt="Screenshot 2025-07-17 123732" src="https://github.com/user-attachments/assets/ee8c8e01-8693-4fda-9656-1d232520bfbe" />
-
 <img width="1912" height="969" alt="Screenshot 2025-07-17 135534" src="https://github.com/user-attachments/assets/f534f32f-2935-4a6c-8d0f-7d811849ba16" />
 
 <img width="1916" height="885" alt="Screenshot 2025-07-17 135627" src="https://github.com/user-attachments/assets/1230dfcd-e5f6-433f-9588-4569d1ce407f" />
 
-<img width="1915" height="974" alt="Screenshot 2025-07-17 140434" src="https://github.com/user-attachments/assets/19cff984-d091-4f37-8997-59b94374b583" />
-
-<img width="1912" height="971" alt="Screenshot 2025-07-17 140332" src="https://github.com/user-attachments/assets/07be1929-ed64-4814-a5fa-9783a3da356e" />
-
 <img width="1914" height="970" alt="Screenshot 2025-07-17 135933" src="https://github.com/user-attachments/assets/e6b23702-f04e-4ca8-9364-8d6d0a9c58df" />
 
-<img width="1902" height="966" alt="Screenshot 2025-07-17 140404" src="https://github.com/user-attachments/assets/8e76239f-ad7f-470b-a826-67c701a8ee55" />
+<img width="1914" height="930" alt="Screenshot 2025-07-17 122023" src="https://github.com/user-attachments/assets/1b9dbd8d-791f-4a4b-91c5-7aa114eedc04" />
+
+* #### Pipeline overview
+
+<img width="1911" height="886" alt="Screenshot 2025-07-17 123732" src="https://github.com/user-attachments/assets/ee8c8e01-8693-4fda-9656-1d232520bfbe" />
+
+
+
 
