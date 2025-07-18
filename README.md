@@ -9,7 +9,7 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 
 
 # 1) IAM User Setup:
-### Creating an IAM user with the necessary permissions for EKS, S3, DynamoDB, ECR, and EC2.
+### Created an IAM user with the necessary permissions for EKS, S3, DynamoDB, ECR, and EC2.
 
   * #### On AWS Console, search I am, and click Users.
   
