@@ -482,17 +482,16 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1911" height="926" alt="Screenshot 2025-07-17 115527" src="https://github.com/user-attachments/assets/b24ca387-a282-470e-86ec-7630d446e68b" />
 
-<img width="1912" height="969" alt="Screenshot 2025-07-17 135534" src="https://github.com/user-attachments/assets/f534f32f-2935-4a6c-8d0f-7d811849ba16" />
-
-<img width="1916" height="885" alt="Screenshot 2025-07-17 135627" src="https://github.com/user-attachments/assets/1230dfcd-e5f6-433f-9588-4569d1ce407f" />
 
 <img width="1914" height="970" alt="Screenshot 2025-07-17 135933" src="https://github.com/user-attachments/assets/e6b23702-f04e-4ca8-9364-8d6d0a9c58df" />
 
-<img width="1914" height="930" alt="Screenshot 2025-07-17 122023" src="https://github.com/user-attachments/assets/1b9dbd8d-791f-4a4b-91c5-7aa114eedc04" />
 
-* #### Pipeline overview
+* #### Pipeline overview - Success
 
-<img width="1911" height="886" alt="Screenshot 2025-07-17 123732" src="https://github.com/user-attachments/assets/ee8c8e01-8693-4fda-9656-1d232520bfbe" />
+
+<img width="1912" height="969" alt="Screenshot 2025-07-17 135534" src="https://github.com/user-attachments/assets/f534f32f-2935-4a6c-8d0f-7d811849ba16" />
+
+<img width="1916" height="885" alt="Screenshot 2025-07-17 135627" src="https://github.com/user-attachments/assets/1230dfcd-e5f6-433f-9588-4569d1ce407f" />
 
 
 
