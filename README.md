@@ -184,16 +184,16 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 <img width="1080" height="689" alt="Screenshot 2025-07-16 123315" src="https://github.com/user-attachments/assets/633bdecb-d71c-4e4c-bee4-7c114631c732" />
 
 
-* #### Now I have to perform 5 Steps on the sonarqube setup.
+* #### I performed 5 Steps on the sonarqube setup.
 
 * #### Setup of frontend project for code analysis
-* 
+  
 <img width="1916" height="764" alt="Screenshot 2025-07-16 123909" src="https://github.com/user-attachments/assets/3e71e004-23cd-48ae-b47b-49c3f7bf769a" />
 
 <img width="1782" height="778" alt="Screenshot 2025-07-16 124048" src="https://github.com/user-attachments/assets/bf8c4ee3-05ba-4515-9b5a-13cf3b802e7c" />
 
 * #### Setup of backend project for code analysis
-* 
+  
 <img width="1916" height="858" alt="Screenshot 2025-07-16 123938" src="https://github.com/user-attachments/assets/f327179f-90a8-41b4-a81f-8df8a08885e0" />
 
 <img width="1893" height="886" alt="Screenshot 2025-07-16 125004" src="https://github.com/user-attachments/assets/0610c814-014e-4a42-bca3-f6ef5c74bcaa" />
@@ -214,11 +214,13 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 # 7) Amazon ECR Repositories
 
 * #### Created two repositories, one for the backend and front end.
+* 
 <img width="1902" height="867" alt="Screenshot 2025-07-16 132220" src="https://github.com/user-attachments/assets/be3d23d8-45e3-4d04-b0ae-5351ff53bd3e" />
 
 <img width="1902" height="874" alt="Screenshot 2025-07-16 132254" src="https://github.com/user-attachments/assets/f7cce2df-720e-446f-be55-00a2df951a65" />
 
 * #### Successifully created the repositories in ECR
+* 
 <img width="1906" height="865" alt="Screenshot 2025-07-16 132440" src="https://github.com/user-attachments/assets/539421bc-5cbc-4664-99e7-7c9f0fd7f47d" />
 
 * #### Login to ECR on the Jenkins server, using the ECR push command.
@@ -231,7 +233,7 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 ***
 
 
-# 7a) Add Cred. in Jenkins
+# 7a) Added Credentials in Jenkins
 
 * #### I added a total of 7 Credentials.
 
@@ -243,34 +245,48 @@ Deployed a **secure and scalable** three-tier web application on AWS EKS, levera
 
 <img width="1798" height="801" alt="Screenshot 2025-07-16 140616" src="https://github.com/user-attachments/assets/085cd890-9189-41e3-8dff-9eff90e9eeda" />
 
+* #### github
+
 <img width="1891" height="854" alt="Screenshot 2025-07-16 142334" src="https://github.com/user-attachments/assets/e8872c9c-6376-408e-bab8-eb7a5f2b5e88" />
+
+#### Sonarqube
 
 <img width="1901" height="847" alt="Screenshot 2025-07-16 142601" src="https://github.com/user-attachments/assets/690a6ed0-dc63-4b42-8991-32913e188af1" />
 
+#### ECR repo front end
+
 <img width="1903" height="898" alt="Screenshot 2025-07-16 142833" src="https://github.com/user-attachments/assets/00e5b039-9cd9-4ebd-b386-926424bef6db" />
+
+#### ECR repo back end
 
 <img width="1820" height="842" alt="Screenshot 2025-07-16 143016" src="https://github.com/user-attachments/assets/37e4bdf6-b5e5-4595-a92a-d78163a95d6a" />
 
-* #### Now We have to configure the installed plugins. (important)
+* ### I configured the installed plugins
 
+* #### JDK
+  
 <img width="1794" height="681" alt="Screenshot 2025-07-16 144433" src="https://github.com/user-attachments/assets/2030f41a-b91b-4a84-a556-b5e35d047f58" />
 
+* #### NodeJS
+  
 <img width="1651" height="766" alt="Screenshot 2025-07-16 144838" src="https://github.com/user-attachments/assets/cf0ab137-503a-49f0-9f45-4f8171cb695f" />
+
+* #### Sonarqube Scanner
 
 <img width="1699" height="651" alt="Screenshot 2025-07-16 144855" src="https://github.com/user-attachments/assets/34bf4b74-aa0c-42d1-a7fd-698bfea5490c" />
 
+* #### Dependency-Check
+
 <img width="1667" height="551" alt="Screenshot 2025-07-16 144958" src="https://github.com/user-attachments/assets/dc6c5287-c233-4384-9698-cf8e3465fb70" />
+
+* #### Docker
 
 <img width="1711" height="575" alt="Screenshot 2025-07-16 145133" src="https://github.com/user-attachments/assets/0d431402-ca41-43a6-b3c1-707d88df357d" />
 
+* #### Sonar Installation
+
 <img width="1585" height="669" alt="Screenshot 2025-07-16 145614" src="https://github.com/user-attachments/assets/6c10868c-35da-4ff1-a7ed-23e385114c0d" />
 
-
-* #### In Tools, We have to configure JDK, sonar-scanner, nodejs, DP-Check, and docker.
-
-* #### Go to Dashboard -> Manage Jenkins -> System
-
-* #### Search for SonarQube installations
 
 Provide the name as it is, then in the Server URL copy the sonarqube public IP (same as Jenkins) with port 9000 select the sonar token that we have added recently, and click on Apply & Save.
 
@@ -279,7 +295,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 # 8) EKS Cluster Deployment
 
 
-* #### We have to create EKS Cluster using the below commands.
+* #### I have created EKS Cluster using the below commands.
 <img width="1915" height="971" alt="Screenshot 2025-07-16 145913" src="https://github.com/user-attachments/assets/87ba2dcc-954e-4aea-baff-2a6bd4157bfd" />
 
 <img width="1904" height="938" alt="Screenshot 2025-07-16 152401" src="https://github.com/user-attachments/assets/50c6fa85-d8c3-4c5d-8623-ba9fad1e3178" />
@@ -297,18 +313,13 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1911" height="495" alt="Screenshot 2025-07-16 154624" src="https://github.com/user-attachments/assets/c4eae3d7-e7f9-44bf-95ff-36df6e9878b3" />
 
-
-* #### Create the IAM policy using the below command
-
-* #### Create OIDC Provider
+* #### Created OIDC Provider
 
 <img width="1908" height="211" alt="Screenshot 2025-07-16 154929" src="https://github.com/user-attachments/assets/33d9bbc4-2f2f-469c-89ef-b1acf66ad73a" />
 
-* #### Create a Service Account by using below command and replace your account ID with your one
-* #### Run the below command to deploy the AWS Load Balancer Controller
-<img width="1893" height="616" alt="Screenshot 2025-07-16 155803" src="https://github.com/user-attachments/assets/f0a92454-58b9-4048-9dc1-2ef76fb09749" />
+* #### Created a Service Account 
 
-* #### After 2-3 minutes, run the command below to check whether your pods are running or not.
+<img width="1893" height="616" alt="Screenshot 2025-07-16 155803" src="https://github.com/user-attachments/assets/f0a92454-58b9-4048-9dc1-2ef76fb09749" />
 
 
   ***
@@ -317,23 +328,29 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 # 9) Prometheus and Grafana Installation and Configuration
 
 
-* #### Step 1: Add Helm Repositories
+* ####  Added Helm Stable Chart Repository
+* 
 <img width="1465" height="86" alt="Screenshot 2025-07-16 160141" src="https://github.com/user-attachments/assets/af16013a-fb13-4d80-bcd0-2ab773093284" />
 
-* #### Add Helm Stable Chart Repository
-* #### 2. Add Prometheus Community Helm Repository
+* #### Added Prometheus Community Helm Repository
+
+ <img width="1879" height="141" alt="Screenshot 2025-07-16 161524" src="https://github.com/user-attachments/assets/8f2ea759-eeff-43ec-860a-3a08da76c690" />
+
+* ####  Installed AWS loadbalancer
+
 <img width="1905" height="821" alt="Screenshot 2025-07-16 160610" src="https://github.com/user-attachments/assets/32ddec39-d912-4985-963e-9b0048995b8a" />
+
+* #### Add Helm Stable Chart Repository
 
 <img width="1907" height="598" alt="Screenshot 2025-07-16 161438" src="https://github.com/user-attachments/assets/788e5f0c-40c3-437f-b04d-50716c74bf56" />
 
-* #### Step 2: Create a Namespace for monitoring
+* #### Step 2: Created a Namespace for monitoring
 <img width="1884" height="246" alt="Screenshot 2025-07-16 161632" src="https://github.com/user-attachments/assets/17e84af7-e626-4088-99f2-42d1d6191fe5" />
 
 * #### Step 3: Install Prometheus with Grafana using Helm
 
 <img width="1895" height="480" alt="Screenshot 2025-07-16 160736" src="https://github.com/user-attachments/assets/fabefef5-ee78-41ea-a873-2b2d0a97a103" />
 
-<img width="1879" height="141" alt="Screenshot 2025-07-16 161524" src="https://github.com/user-attachments/assets/8f2ea759-eeff-43ec-860a-3a08da76c690" />
 
 * #### Install the kube-prometheus-stack chart, which includes both Prometheus and Grafana:
 * #### This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
