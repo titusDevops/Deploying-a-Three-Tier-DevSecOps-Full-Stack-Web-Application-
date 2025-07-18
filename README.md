@@ -359,10 +359,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1905" height="821" alt="Screenshot 2025-07-16 160610" src="https://github.com/user-attachments/assets/32ddec39-d912-4985-963e-9b0048995b8a" />
 
-* #### There are two ways to expose these services:
-
-* #### NodePort
-* #### LoadBalancer
+* #### There are two ways to expose these services: NodePOrt and LoadBalancer
 
 * #### Exposing Prometheus via LoadBalancer:
 
@@ -377,7 +374,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1895" height="480" alt="Screenshot 2025-07-16 160736" src="https://github.com/user-attachments/assets/fabefef5-ee78-41ea-a873-2b2d0a97a103" />
 
 
-* #### Step 4: Verify Prometheus Installation
+* #### Verify Prometheus Installation
 
 * #### Check the Prometheus pods:
 <img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/53106e1f-a1d2-4e0e-abaa-25a83f13b769" />
@@ -387,7 +384,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 <img width="1890" height="568" alt="Screenshot 2025-07-16 162829" src="https://github.com/user-attachments/assets/997369e9-1b89-480d-a5b1-8f44324c80e3" />
 
 
-* #### Step 6: Accessing Grafana
+* #### Accessing Grafana
 
 <img width="1908" height="680" alt="Screenshot 2025-07-16 164431" src="https://github.com/user-attachments/assets/262009b0-e6a7-4a9e-8e9d-b2360e0a0d67" />
 
@@ -425,8 +422,6 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1913" height="949" alt="Screenshot 2025-07-16 172746" src="https://github.com/user-attachments/assets/d59e1ad8-606e-400e-a407-384ae2605227" />
 
-<img width="1878" height="915" alt="Screenshot 2025-07-17 091354" src="https://github.com/user-attachments/assets/0e11fa66-0421-4800-8796-194698ffe427" />
-
 <img width="1611" height="640" alt="Screenshot 2025-07-17 100359" src="https://github.com/user-attachments/assets/4312a941-c171-4702-a429-6c611b6bbfaa" />
 
 <img width="1689" height="671" alt="Screenshot 2025-07-17 100526" src="https://github.com/user-attachments/assets/03921efd-c1eb-4f9c-9ae9-ed1a59be67b1" />
@@ -441,9 +436,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 # 11) ArgoCD Installation & Application Deployment
 
-* #### I installed argoCD.
-
-* #### To do that, create a separate namespace for it and apply the argocd configuration for installation
+* #### To install argoCD, create a separate namespace for it and apply the argocd configuration for installation
 
 <img width="1904" height="221" alt="Screenshot 2025-07-17 110709" src="https://github.com/user-attachments/assets/c403773f-5838-4c34-b103-cbfc8bd6a776" />
 
@@ -478,11 +471,8 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 * #### Then We have to set up database, backend, frontend , frontend ingress and backend-ingress applications.
 
+
 <img width="1915" height="974" alt="Screenshot 2025-07-17 140434" src="https://github.com/user-attachments/assets/19cff984-d091-4f37-8997-59b94374b583" />
-
-<img width="1904" height="974" alt="Screenshot 2025-07-17 113329" src="https://github.com/user-attachments/assets/89faaf1e-0dff-4b76-8d2f-6513414c6ac1" />
-
-<img width="1919" height="975" alt="Screenshot 2025-07-17 114835" src="https://github.com/user-attachments/assets/d4e26648-bd14-4483-a22b-630f922116a3" />
 
 <img width="1912" height="971" alt="Screenshot 2025-07-17 140332" src="https://github.com/user-attachments/assets/07be1929-ed64-4814-a5fa-9783a3da356e" />
 
@@ -492,9 +482,6 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1911" height="926" alt="Screenshot 2025-07-17 115527" src="https://github.com/user-attachments/assets/b24ca387-a282-470e-86ec-7630d446e68b" />
 
-<img width="1892" height="980" alt="Screenshot 2025-07-17 120858" src="https://github.com/user-attachments/assets/95d04009-df18-4e26-892e-ee1e97dff0bd" />
-
-<img width="1911" height="984" alt="Screenshot 2025-07-17 120944" src="https://github.com/user-attachments/assets/224930f9-f28b-4fa7-bf89-9cc82d9d6d2e" />
 <img width="1912" height="969" alt="Screenshot 2025-07-17 135534" src="https://github.com/user-attachments/assets/f534f32f-2935-4a6c-8d0f-7d811849ba16" />
 
 <img width="1916" height="885" alt="Screenshot 2025-07-17 135627" src="https://github.com/user-attachments/assets/1230dfcd-e5f6-433f-9588-4569d1ce407f" />
