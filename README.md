@@ -329,51 +329,35 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 
 * ####  Added Helm Stable Chart Repository
-* 
-<img width="1465" height="86" alt="Screenshot 2025-07-16 160141" src="https://github.com/user-attachments/assets/af16013a-fb13-4d80-bcd0-2ab773093284" />
 
+<img width="1907" height="598" alt="Screenshot 2025-07-16 161438" src="https://github.com/user-attachments/assets/788e5f0c-40c3-437f-b04d-50716c74bf56" />
+  
 * #### Added Prometheus Community Helm Repository
 
  <img width="1879" height="141" alt="Screenshot 2025-07-16 161524" src="https://github.com/user-attachments/assets/8f2ea759-eeff-43ec-860a-3a08da76c690" />
 
-* ####  Installed AWS loadbalancer
+ * #### Added Helm EKS Chart Repository
 
-<img width="1905" height="821" alt="Screenshot 2025-07-16 160610" src="https://github.com/user-attachments/assets/32ddec39-d912-4985-963e-9b0048995b8a" />
+ <img width="1465" height="86" alt="Screenshot 2025-07-16 160141" src="https://github.com/user-attachments/assets/af16013a-fb13-4d80-bcd0-2ab773093284" />
 
-* #### Add Helm Stable Chart Repository
-
-<img width="1907" height="598" alt="Screenshot 2025-07-16 161438" src="https://github.com/user-attachments/assets/788e5f0c-40c3-437f-b04d-50716c74bf56" />
-
-* #### Step 2: Created a Namespace for monitoring
+ * #### Created a Namespace for monitoring
 <img width="1884" height="246" alt="Screenshot 2025-07-16 161632" src="https://github.com/user-attachments/assets/17e84af7-e626-4088-99f2-42d1d6191fe5" />
 
-* #### Step 3: Install Prometheus with Grafana using Helm
+* #### Installed Prometheus with Grafana using Helm
 
-<img width="1895" height="480" alt="Screenshot 2025-07-16 160736" src="https://github.com/user-attachments/assets/fabefef5-ee78-41ea-a873-2b2d0a97a103" />
+ <img width="1919" height="641" alt="Screenshot 2025-07-16 161913" src="https://github.com/user-attachments/assets/e6256960-0b5f-43ca-85f5-139f9d45b61f" />
 
+ * #### Verify Prometheus Installation
 
-* #### Install the kube-prometheus-stack chart, which includes both Prometheus and Grafana:
-* #### This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
+ <img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/6407cc1e-8bda-4f3b-80f8-c5942f0effca" />
 
-<img width="1919" height="641" alt="Screenshot 2025-07-16 161913" src="https://github.com/user-attachments/assets/e6256960-0b5f-43ca-85f5-139f9d45b61f" />
+ * #### Check the Prometheus services:
 
-* #### Step 4: Verify Prometheus Installation
+ <img width="1908" height="550" alt="Screenshot 2025-07-16 162124" src="https://github.com/user-attachments/assets/a51cd347-c498-4bf9-afdc-d66285e87195" />
 
-* #### Check the Prometheus pods:
-* #### This command deploys Prometheus and Grafana as part of the kube-prometheus-stack in the prometheus namespace on your EC2 instance.
-<img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/6407cc1e-8bda-4f3b-80f8-c5942f0effca" />
+ * ####  Installed AWS loadbalancer
 
-* #### Step 4: Verify Prometheus Installation
-
-* #### Check the Prometheus pods:
-<img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/53106e1f-a1d2-4e0e-abaa-25a83f13b769" />
-
-* #### Check the Prometheus services:
-<img width="1908" height="550" alt="Screenshot 2025-07-16 162124" src="https://github.com/user-attachments/assets/a51cd347-c498-4bf9-afdc-d66285e87195" />
-
-* #### Since Grafana is deployed along with Prometheus, there is no need for separate Grafana installation.
-
-* #### Step 5: Expose Prometheus and Grafana to External Access
+<img width="1905" height="821" alt="Screenshot 2025-07-16 160610" src="https://github.com/user-attachments/assets/32ddec39-d912-4985-963e-9b0048995b8a" />
 
 * #### There are two ways to expose these services:
 
@@ -381,20 +365,27 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 * #### LoadBalancer
 
 * #### Exposing Prometheus via LoadBalancer:
-* #### Save the file. The service should now have a load balancer with an external IP to access Prometheus.
-
-* #### Exposing Grafana via LoadBalancer:
-
-* #### Similarly, edit the Grafana service configuration to change ClusterIP to LoadBalancer:
-* #### Save the changes and use the load balancer IP in your browser to access Grafana.
 
 <img width="1876" height="109" alt="Screenshot 2025-07-16 162556" src="https://github.com/user-attachments/assets/a7069edf-110e-4922-af6f-609df4852dd4" />
 
-<img width="1890" height="568" alt="Screenshot 2025-07-16 162829" src="https://github.com/user-attachments/assets/997369e9-1b89-480d-a5b1-8f44324c80e3" />
+* #### Exposing Grafana via LoadBalancer:
 
 <img width="1239" height="80" alt="Screenshot 2025-07-16 163225" src="https://github.com/user-attachments/assets/8bd573ff-2159-4116-95cb-9d15ebc647ce" />
 
 <img width="1916" height="689" alt="Screenshot 2025-07-16 163447" src="https://github.com/user-attachments/assets/54b7ebf0-2b8f-4838-8f54-b7f90ea20f06" />
+
+<img width="1895" height="480" alt="Screenshot 2025-07-16 160736" src="https://github.com/user-attachments/assets/fabefef5-ee78-41ea-a873-2b2d0a97a103" />
+
+
+* #### Step 4: Verify Prometheus Installation
+
+* #### Check the Prometheus pods:
+<img width="1892" height="299" alt="Screenshot 2025-07-16 161958" src="https://github.com/user-attachments/assets/53106e1f-a1d2-4e0e-abaa-25a83f13b769" />
+
+
+
+<img width="1890" height="568" alt="Screenshot 2025-07-16 162829" src="https://github.com/user-attachments/assets/997369e9-1b89-480d-a5b1-8f44324c80e3" />
+
 
 * #### Step 6: Accessing Grafana
 
@@ -450,7 +441,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 # 11) ArgoCD Installation & Application Deployment
 
-* #### Now, we will install argoCD.
+* #### I installed argoCD.
 
 * #### To do that, create a separate namespace for it and apply the argocd configuration for installation
 
