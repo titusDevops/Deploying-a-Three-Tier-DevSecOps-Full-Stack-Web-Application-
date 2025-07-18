@@ -478,10 +478,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
 
 <img width="1902" height="966" alt="Screenshot 2025-07-17 140404" src="https://github.com/user-attachments/assets/8e76239f-ad7f-470b-a826-67c701a8ee55" />
 
-<img width="1900" height="943" alt="Screenshot 2025-07-17 114938" src="https://github.com/user-attachments/assets/c7b6bd9a-d676-4e2f-8f32-ec3312625ec3" />
-
 <img width="1911" height="926" alt="Screenshot 2025-07-17 115527" src="https://github.com/user-attachments/assets/b24ca387-a282-470e-86ec-7630d446e68b" />
-
 
 <img width="1914" height="970" alt="Screenshot 2025-07-17 135933" src="https://github.com/user-attachments/assets/e6b23702-f04e-4ca8-9364-8d6d0a9c58df" />
 
