@@ -325,7 +325,7 @@ Provide the name as it is, then in the Server URL copy the sonarqube public IP (
   ***
 
   
-# 9) Prometheus and Grafana Installation and Configuration
+# 9) Prometheus and Grafana Installation and Configuration Using Helm
 
 
 * ####  Added Helm Stable Chart Repository
